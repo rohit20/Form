@@ -1,0 +1,77 @@
+<html>
+<head><center>
+<b><h1>Feedback Form</h1></b></center><br>
+<br>
+
+   
+  
+   
+ <script>
+function fetchText(){
+values=document.getElementsByName("name");
+for(ctr=0;ctr<values.length;ctr++){
+alert("Thankyou for feedback" +" " + values[ctr].value);
+
+}
+}</script
+</head>
+
+<body>
+
+
+
+Name*
+<select>
+  <option value="Mr">Mr</option>
+  <option value="Mrs">Mrs</option>
+ <option value="Miss">Miss</option></select>
+<input tye="text" placeholder="Enter name" name="name" required><br>
+<br>
+Address 1*<input tye="text" placeholder="Enter address" name="adr1" required>
+<br><br>
+Address 2*<input tye="text" placeholder="Enter address" name="adr2" required>
+<br>
+<br>
+State*
+<select>
+<option value="SELECT">--select--</option>
+  <option value="AP">AP</option>
+  <option value="MAHARSTRA">MAHARASTRA</option>
+ <option value="TELANGANA">TELAGANA</option></select><br>
+<br>
+City*
+<select>
+<option value="SELECT">--select--</option>
+  <option value="ELURU">ELURU</option>
+  <option value="HYDERABAD">HYDERABAD</option>
+ <option value="AIROLI">AIROLI</option></select><br>
+<br>
+Pin Code*<input tye="text" placeholder="Enter pincode" name="pin" required><br>
+<br>
+Mobile Number*<input tye="text" placeholder="Enter Number" name="mble" required><br>
+<br>
+Email ID*<input tye="text" placeholder="Ente email" name="email" required><br>
+<br>
+Select Car Model
+<select>
+<option value="SELECT">--select--</option>
+  <option value="Suzuki">Maruthi suzuki</option>
+  <option value="pept">pept</option>
+ <option value="hero honda">Hero Honda</option></select><br>
+<br>
+<form>
+<input type="checkbox" name="paint" value="name1">Paint  
+<input type="checkbox" name="EngineRepair" value="name2">EngineRepair  
+<input type="checkbox" name="BodyRepair" value="name3">BodyRepair   
+<input type="checkbox" name="FreeService" value="name4">FreeService  
+<input type="checkbox" name="PaidService" value="name5">PaidService
+</form>
+Total Kilometers Covered*<input tye="text" name="tkc" required>
+<br>
+<br>
+Your Feedback*<input tye="text" name="tkc" required>    
+<input type="submit" value="Submit" onclick="fetchText()">
+<input type="submit" value="cancel">
+</form>
+</body>
+</html>
