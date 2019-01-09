@@ -1,0 +1,20 @@
+<HTML>
+      <HEAD>
+        <TITLE>Test</TITLE>
+        <script type="text/javascript"> 
+
+        function display(){ 
+            document.write("You entered: " + document.myform.data.value);
+        } 
+        </script> 
+      </HEAD>
+      <BODY>
+      <center>    
+<form name="myform">
+
+  <input  type="text" name="data">
+  <input type="submit" value="Submit" onClick="display()">
+
+</form>
+    </BODY>
+    </HTML>
