@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Employee</title>
+			<style>		
+				h1{
+					color: black;
+				}
+				table{
+						border: 2px solid black;
+					}
+			</style>
+	</head>
+<body><br><br>
+	<table><br><br>
+		<tr><td>
+				<h1>Employee Referral Form</h1>
+		</td></tr>
+        <tr><td>
+				<label>First Name: </label></td>
+			<td><input id ="txtname" name="txtName" required/></td>
+		</tr>
+		<tr><td>
+				<label>Last Name: </label> </td>
+			<td><input id ="lsttname" name="lstName" required/></td>
+		</tr>
+		<tr><td>
+				<label>Contact Number: </label> </td>
+			<td><input id ="number" name="number" required/></td>
+		</tr>
+		<tr><td>
+				<label for="email">Email Address:</label></td>
+				<td><input id="email" name="txtEmail" type="email" required/></td>
+        </tr>
+		<tr><td>
+				<label>Date of Birth:</label></td>
+				<td><input id="dob" name="dob" placeholder="mm/dd/yyyy" required/></td>
+		</tr>
+		<tr><td>
+				Current City/Location:
+				<td><input id ="model" type="text" list="models" /></td>
+				<td><datalist id="models">
+						<option value="Chennai">
+						<option value="Bangalore">
+						<option value="Pune">
+						<option value="Mumbai">         
+                </datalist></td>
+                
+		</td></tr>
+		<tr><td>
+				<center><input type="submit" value="submit"/></center>
+		</td></tr>
+	</table>
+</body>
+</html>
+	
