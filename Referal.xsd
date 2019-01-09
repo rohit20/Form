@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Ref_name" type="xs:string"/>
+<xs:element name="Address" type="xs:string"/>
+<xs:element name="PhoneNo" type="xs:integer"/>
+<xs:element name="Degree" type="xs:string"/>
+<xs:element name="EmpNo" type="xs:string"/>
+<xs:attribute name="Ref_num" type="xs:integer"></xs:attribute>
+
+<!-- Definition of XML structure for a particular Record -->
+<xs:element name="Referalvalues">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="Ref_name"/>
+			<xs:element ref="Address"/>
+			<xs:element ref="PhoneNo"/>
+			<xs:element ref="Degree"/>
+			<xs:element ref="EmpNo"/>
+		</xs:sequence>
+		<xs:attribute ref="Ref_num" use="required"/>
+	</xs:complexType>
+</xs:element>
+
+<!-- Structure of whole xml file -->
+<xs:element name="Referal">
+	<xs:complexType>
+	<xs:sequence>
+		<xs:element name="Referalvalues" maxOccurs="unbounded"/>
+	</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
